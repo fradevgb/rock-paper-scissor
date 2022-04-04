@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-top: 5rem;
+  padding: 3rem;
+  width: 90vw;
+  height: 15rem;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+}
+
+.score {
+  width: 15rem;
+  height: 11.4rem;
+  background: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score h1 {
+  color: #565468;
+}
+
+.score p {
+  color: #2a45c2;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+  letter-spacing: 0.25rem;
+}
+
+.hands {
+  background-image: url(/assets/images/triangle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 47.6rem;
+  height: 43rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.scissors {
+  margin-left: 2rem;
+}
+
+.paper {
+  margin-right: 2rem;
+}
+
+.hands .hand {
+  cursor: pointer;
+}
+
+.hands .hand:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+
+.hands img {
+  width: 17rem;
+}
+
+.contest {
+  width: 90rem;
+  display: none;
+  margin-top: 5rem;
+}
+
+.contest img {
+  width: 27.5rem;
+  height: 27.5rem;
+}
+
+.contest > div {
+  flex: 1;
+  /* flex: 0.3; */
+}
+
+.contest h2 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.contest .handImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.referee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.referee h2 {
+  font-size: 1.5rem;
+}
+
+.newGame {
+  background-color: white;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: hsl(229, 25%, 31%);
+  /* transition: all 0.15s; */
+}
+
+.newGame:hover {
+  background-color: bisque;
+  transform: translate3d(0px, -2px, 0px);
+}
