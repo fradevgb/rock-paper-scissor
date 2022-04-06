@@ -48,14 +48,21 @@ p {
 }
 
 .score {
-  width: 15rem;
-  height: 11.4rem;
+  width: 10rem;
+  height: 9rem;
   background: #fff;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) { 
+  .score {
+    width: 15rem;
+    height: 11.4rem;
+  }
 }
 
 .score h1 {
@@ -103,19 +110,31 @@ p {
 }
 
 .contest {
-  width: 90rem;
+  width: 37rem;
   display: none;
   margin-top: 5rem;
 }
 
+@media (min-width: 768px) { 
+  .contest {
+    width: 55rem;
+  }
+}
+
 .contest img {
-  width: 27.5rem;
-  height: 27.5rem;
+  width: 13rem;
+  height: 13rem;
+}
+
+@media (min-width: 768px) { 
+  .contest img {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 
 .contest > div {
   flex: 1;
-  /* flex: 0.3; */
 }
 
 .contest h2 {
@@ -142,13 +161,19 @@ p {
   font-size: 1.5rem;
 }
 
+.computerhand h2 {
+  height: 2.3rem;
+}
+
 .newGame {
   background-color: white;
+  font-size: 1.5rem;
   padding: 1.2rem 2.4rem;
   border-radius: 0.6rem;
   cursor: pointer;
   color: hsl(229, 25%, 31%);
-  /* transition: all 0.15s; */
+  transition: all 0.15s;
+  white-space: nowrap;
 }
 
 .newGame:hover {
